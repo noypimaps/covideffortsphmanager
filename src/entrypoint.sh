@@ -1,6 +1,7 @@
 
 #!/bin/sh
 
+
 if [ "$DATABASE" = "postgres" ]
 then
     echo "Waiting for postgres..."
