@@ -30,7 +30,7 @@ class AddressDetailsAdmin(admin.ModelAdmin):
 class OtherDetailsAdmin(admin.ModelAdmin):
     list_display = ('id','org', 'link_for_more_info', 'link_to_poster')
     search_fields = ('org', 'who_they_help', 'what_they_do')
-    list_editable = ('org', 'who_they_help', 'what_they_do')
+    list_editable = ('org', 'link_for_more_info', 'link_to_poster')
 
 class ItemizedNeedsAdmin(admin.ModelAdmin):
     list_display = ('id','org', 'name_of_item', 'unit', 'received_inventories', 'total_need')
