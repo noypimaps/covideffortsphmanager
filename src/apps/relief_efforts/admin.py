@@ -13,9 +13,9 @@ class ContactDetailsAdmin(admin.ModelAdmin):
     list_editable = ('org', 'name', 'contact_number')
 
 class BankDetailsAdmin(admin.ModelAdmin):
-    list_display = ('id','contact_details', 'bank_name', 'account_number', 'account_number')
-    search_fields = ('contact_details', 'bank_name', 'account_number', 'account_number')
-    list_editable = ('contact_details', 'bank_name', 'account_number', 'account_number')
+    list_display = ('id','org', 'bank_name', 'account_number', 'account_number')
+    search_fields = ('org', 'bank_name', 'account_number', 'account_number')
+    list_editable = ('org', 'bank_name', 'account_number', 'account_number')
 
 class PricingDetailsAdmin(admin.ModelAdmin):
     list_display = ('id','org', 'name_of_item', 'unit', 'unit_price')
