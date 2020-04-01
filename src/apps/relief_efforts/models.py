@@ -51,7 +51,7 @@ class ContactDetails(models.Model):
 
 
 class BankDetails(models.Model):
-    contact_details = models.ForeignKey(ContactDetails, on_delete=models.CASCADE)
+    org = models.ForeignKey(Organizations, on_delete=models.CASCADE)
     bank_name = models.CharField(max_length=100, null=False)
     account_name = models.CharField(max_length=100, null=False)
     account_number = models.CharField(max_length=100, null=False)
